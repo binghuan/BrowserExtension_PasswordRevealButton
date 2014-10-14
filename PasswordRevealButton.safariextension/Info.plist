@@ -41,6 +41,8 @@
 			<string>http://*/*</string>
 		</array>
 	</dict>
+	<key>Description</key>
+	<string> It enables the password that you have typed to be temporarily displayed on the screen</string>
 	<key>DeveloperIdentifier</key>
 	<string>VH8FYD6YYB</string>
 	<key>ExtensionInfoDictionaryVersion</key>

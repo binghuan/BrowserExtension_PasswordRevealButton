@@ -1,20 +1,20 @@
 {
-  "description": "Test JavaScript Injection",
-  "contributors": [],
-  "author": "BH_Lin",
-  "url": "http://studiobinghuan.blogspot.com?view=flipcard",
-  "dependencies": [
-    "api-utils",
-    "addon-kit"
-  ],
-  "version": "1.0.0",
-  "lib": "data",
-  "fullName": "Test JavaScript Injection",
-  "main": "main",
-  "id": "jid1-vNHTvOqh5xgTbg",
-  "name": "testjavascriptinjection",
-  "icon": "Icon-48.png",
-  "permissions": {"private-browsing": true}
+	"fullName": "Password Reveal Button",
+	"description": "It enables the password that you have typed to be temporarily displayed on the screen",
+	"contributors": [],
+	"author": "BH_Lin",
+	"url": "http://studiobinghuan.blogspot.com?view=flipcard",
+	"dependencies": [
+    	"api-utils",
+    	"addon-kit"
+  	],
+  	"version": "1.0.0",
+  	"lib": "data",
+  	"main": "main",
+  	"id": "jid1-vNHTvOqh5xgTbg",
+  	"name": "testjavascriptinjection",
+  	"icon": "Icon-48.png",
+  	"permissions": {"private-browsing": true}
 }
 
 
