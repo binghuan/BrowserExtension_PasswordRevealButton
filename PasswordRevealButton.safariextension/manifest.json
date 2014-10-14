@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Password Reveal Button",
+  "description": "",
+  "version": "1.0.0",
+  "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "tabs"
+  		],
+  "content_scripts": [{
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+           ],
+      "js": [
+              "data/lib/jquery-1.11.1.min.js",
+              "data/content_script.js"
+            ],
+     "run_at": "document_idle",
+     "all_frames": true
+  }],
+  "icons": {
+    "16": "data/images/Icon-16.png",
+    "48": "data/images/Icon-48.png",
+    "128": "data/images/Icon-128.png"
+  }
+}
+

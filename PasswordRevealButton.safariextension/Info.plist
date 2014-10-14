@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>BH_Lin</string>
+	<key>Builder Version</key>
+	<string>9537.85.10.17.1</string>
+	<key>CFBundleDisplayName</key>
+	<string>Password Reveal Button</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.bh.safari.PasswordRevealButton</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Database Quota</key>
+		<real>104857600</real>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>data/lib/jquery-1.11.1.min.js</string>
+				<string>data/content_script.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>data/jquery-ui.min.css</string>
+		</array>
+		<key>Whitelist</key>
+		<array>
+			<string>https://*/*</string>
+			<string>http://*/*</string>
+		</array>
+	</dict>
+	<key>DeveloperIdentifier</key>
+	<string>VH8FYD6YYB</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://studiobinghuan.blogspot.tw/?view=flipcard</string>
+</dict>
+</plist>
