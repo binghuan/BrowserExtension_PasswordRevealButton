@@ -1,0 +1,2 @@
+BrowserExtension_PasswordRevealButton
+=====================================
