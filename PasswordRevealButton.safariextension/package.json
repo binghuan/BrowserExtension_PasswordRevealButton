@@ -12,7 +12,7 @@
   	"lib": "data",
   	"main": "main",
   	"id": "jid1-vNHTvOqh5xgTbg",
-  	"name": "testjavascriptinjection",
+  	"name": "passwordrevealbutton",
   	"icon": "Icon-48.png",
   	"permissions": {"private-browsing": true}
 }
