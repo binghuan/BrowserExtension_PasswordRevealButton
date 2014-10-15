@@ -1,16 +1,13 @@
 {
-	"fullName": "Password Reveal Button",
-	"description": "It enables the password that you have typed to be temporarily displayed on the screen",
-	"contributors": [],
-	"author": "BH_Lin",
-	"url": "http://studiobinghuan.blogspot.com?view=flipcard",
-	"dependencies": [
+	 "fullName": "Password Reveal Button",
+	 "description": "It enables the password that you have typed to be temporarily displayed on the screen",
+	 "author": "BH_Lin",
+	 "url": "http://studiobinghuan.blogspot.com?view=flipcard",
+	 "dependencies": [
     	"api-utils",
     	"addon-kit"
   	],
-  	"version": "1.0.1",
-  	"lib": "data",
-  	"main": "main",
+  	"version": "1.0.4",
   	"id": "jid1-vNHTvOqh5xgTbg",
   	"name": "passwordrevealbutton",
   	"icon": "Icon-48.png",
