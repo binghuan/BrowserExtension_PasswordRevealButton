@@ -8,7 +8,7 @@
     	"api-utils",
     	"addon-kit"
   	],
-  	"version": "1.0.0",
+  	"version": "1.0.1",
   	"lib": "data",
   	"main": "main",
   	"id": "jid1-vNHTvOqh5xgTbg",

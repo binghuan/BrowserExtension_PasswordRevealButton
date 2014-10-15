@@ -61,13 +61,25 @@ for(var i=0; i< pwdField.length; i++) {
 	if(DBG)console.log("backup placeholder: ", backupPlacehoder[i])
 }
 
+var USE_SOLUTION_1 = false;
+
 $(pwdField).on("mousedown", function(e) {// just bind the first input field
 	var inputFieldPos = this.getBoundingClientRect();
     if(isInTargetArea(e, inputFieldPos) === true) {
         if(DBG)console.log('hit in area !!: ' + e.target.value, $(this).val());
         backupValue = $(this).val();
-        $(this).attr("placeholder", $(this).val());
-        $(this).val("");
+        if( (e.target.value.length === 0) ||
+            (e.target.value === "") ) {
+            return;
+        }
+
+        if(USE_SOLUTION_1 === true) {
+            //console.log(e.target.value.length, e.target.value);
+            $(this).attr("placeholder", $(this).val());
+            $(this).val("");
+        } else {
+            $(this).attr("type", "text");
+        }
     }
 });
 
@@ -75,24 +87,32 @@ $(pwdField).on("mouseup", function(e) {// just bind the first input field
 	var inputFieldPos = this.getBoundingClientRect();
     if(isInTargetArea(e, inputFieldPos) === true) {
         if(DBG)console.log('hit in area !!: ' + e.target.value, $(this).val());
-        $(this).attr("placeholder", "");
-        $(this).val(backupValue);
+
+        if(USE_SOLUTION_1 === true) {
+            $(this).attr("placeholder", "");
+            $(this).val(backupValue);
+        } else {
+            $(this).attr("type", "password");
+        }
     }
 });
 
-$(pwdField).on('input', function(e) {
+if(USE_SOLUTION_1 === true) {
 
-	if(DBG)console.log("input ...", e.target.value.length)
-	if( (e.target.value.length === 0) ||
-		e.target.length === "" ) {
+    $(pwdField).on('input', function(e) {
+        if(DBG)console.log("input ...", e.target.value.length)
+        if( (e.target.value.length === 0) ||
+            e.target.value === "" ) {
+            for(var j=0; j< $(pwdField).length ; j++) {
+                if($(pwdField)[j] == e.target) {
+                    $(this).attr("placeholder", backupPlacehoder[j]);
+                }
+            }
+        }
 
-		for(var j=0; j< $(pwdField).length ; j++) {
-			if($(pwdField)[j] == e.target) {
-				$(this).attr("placeholder", backupPlacehoder[j]);
-			}
-		}
-	}
+    });
 
-});
+}
+
 
 

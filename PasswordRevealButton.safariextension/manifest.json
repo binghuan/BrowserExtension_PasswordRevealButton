@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Password Reveal Button",
   "description": " It enables the password that you have typed to be temporarily displayed on the screen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "permissions": [
         "http://*/*",
         "https://*/*",
