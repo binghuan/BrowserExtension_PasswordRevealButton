@@ -14,7 +14,7 @@
           "https://*/*"
            ],
       "js": [
-              "data/lib/jquery-1.11.1.min.js",
+              "data/lib/jquery-3.4.1.min.js",
               "data/content_script.js"
             ],
      "run_at": "document_idle",
